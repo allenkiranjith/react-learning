@@ -1,0 +1,13 @@
+.game-container {
+  border: 3px solid green;
+  width: 350px;
+}
+
+.game-container.winner {
+  background-color: green;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
