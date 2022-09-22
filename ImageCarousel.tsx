@@ -24,7 +24,7 @@ export default function ImageCarousel({ images }) {
     } else {
       let x = setInterval(() => {
         incrementCarousel();
-      }, 500);
+      }, 2000);
       setToggleInterval(x);
     }
     setIsToggle(!isToggle);
@@ -32,9 +32,13 @@ export default function ImageCarousel({ images }) {
   return (
     <div className="container">
       <div className="carousel-container">
-        <button onClick={decrementCarousel}> -</button>
+        <div onClick={decrementCarousel} className="prev-button">
+          {String.fromCharCode(8592)}
+        </div>
         <img src={images[currImage]} alt="" />
-        <button onClick={incrementCarousel}> + </button>
+        <div onClick={incrementCarousel} className="next-button">
+          {String.fromCharCode(8594)}
+        </div>
       </div>
       <div className="carousel-rotate">
         <input

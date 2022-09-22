@@ -9,10 +9,18 @@ export default function App() {
     'https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_1280.jpg',
     'https://cdn.pixabay.com/photo/2012/03/01/00/55/flowers-19830_1280.jpg',
   ];
+  const containerClass = {
+    width: '400px',
+    height: '250px',
+    margin: '0 auto',
+  };
+
   return (
     <div>
       <h1>Image Carousel!</h1>
-      <ImageCarousel images={images} />
+      <div style={containerClass}>
+        <ImageCarousel images={images} />
+      </div>
     </div>
   );
 }
