@@ -31,12 +31,15 @@ export default function ImageCarousel({ images }) {
   };
   return (
     <div className="container">
-      <div className="carousel-container">
-        <div onClick={decrementCarousel} className="prev-button">
+      <div
+        className="carousel-container"
+        style={{ backgroundImage: `url(${images[currImage]})` }}
+      >
+        <div onClick={decrementCarousel} className="prev">
           {String.fromCharCode(8592)}
         </div>
-        <img src={images[currImage]} alt="" />
-        <div onClick={incrementCarousel} className="next-button">
+        <div className="content"> </div>
+        <div onClick={incrementCarousel} className="next">
           {String.fromCharCode(8594)}
         </div>
       </div>
