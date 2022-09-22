@@ -1,0 +1,14 @@
+.carousel-container {
+  display: flex;
+}
+
+.carousel-container img {
+  width: 400px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.carousel-rotate {
+  display: flex;
+  justify-content: center;
+}
