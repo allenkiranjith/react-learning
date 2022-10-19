@@ -1,3 +1,19 @@
-h1, p {
+h1,
+p {
   font-family: Lato;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .bars {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.container .bars .bar {
+  padding: 0 5px;
 }
